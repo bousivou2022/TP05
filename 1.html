@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+   
+    </style>
+</head>
+<body>
+    <input id="id1" type="text" >
+    <button onclick="onSubmit()">Find</button>
+    </div>
+</body>
+<script>
+    const db1 = {
+        "1": { id:1, sex: 'M', pic:'😎'},
+        "4": { id:4, sex: 'F', pic:'😏'},
+        "6": { id:6, sex: 'F', pic:'🤓'},
+
+    }
+    const db2 = {
+        "2": { id:2, sex: 'F', pic:'😋'},
+        "5": { id:5, sex: 'M', pic:'😕'},
+    }
+    const db3 = {
+        "3": { id:3, sex: 'M', pic:'😂'},
+    }
+    const metaData = {
+        "1": "db1",
+        "2": "db2",
+        "3": "db3",
+        "4": "db1",
+        "5": "db2",
+        "6": "db1",
+    }
+    const userData = {
+        "1": { name: "Boupha", age: 18, private: false },
+        "2": { name: "Chakra", age: 22, private: true },
+        "1": { name: "Champey", age: 17, private: false },
+        "1": { name: "Dara", age: 20, private: false },
+        "1": { name: "Daevy", age: 19, private: true },
+        "1": { name: "Chhorvon", age: 22, private: false },
+        
+    }
+    //Meta
+    //User ID as input
+    // User's info in [db1,db2,db3] as output
+    //Else error message
+    //Info
+    //search user's info by ID
+    //return error
+    const promisedUser = Promise.all([
+        p1,
+        p2
+    ]).then((values) => {
+        console.log(values);
+    }).catch(error => {
+        console.error(error.message)
+    });
+ 
+</script>
+</html>
